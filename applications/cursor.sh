@@ -1,7 +1,8 @@
 cd /tmp
 curl -L --output cursor.appimage https://downloader.cursor.sh/linux/x64
+sudo mkdir -p /opt/cursor
 sudo mv cursor.appimage /opt/cursor/cursor.appimage
-sudo cp ../icons/cursor.png /opt/cursor/cursor.png
+sudo cp ~/www/omakub-fedora/icons/cursor.png /opt/cursor/cursor.png
 sudo chmod +x /opt/cursor/cursor.appimage
 
 DESKTOP_FILE="/usr/share/applications/cursor.desktop"
