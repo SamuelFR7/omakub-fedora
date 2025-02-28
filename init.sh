@@ -37,7 +37,6 @@ flatpak install flathub com.spotify.Client
 flatpak install flathub com.mattjakeman.ExtensionManager
 flatpak install flathub org.localsend.localsend_app
 flatpak install flathub com.todoist.Todoist
-flatpak install flathub com.discordapp.Discord
 flatpak install flathub com.bitwarden.desktop
 flatpak install flathub io.dbeaver.DBeaverCommunity
 flatpak install flathub com.rtosta.zapzap
