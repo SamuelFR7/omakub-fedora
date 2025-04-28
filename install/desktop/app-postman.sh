@@ -1,5 +1,3 @@
-#!/bin/bash
-
 DOWNLOADS_DIR="$HOME/Downloads"
 
 wget https://dl.pstmn.io/download/latest/linux64 -O "$DOWNLOADS_DIR/postman.tar.gz"
