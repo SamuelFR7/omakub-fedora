@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Ensure computer doesn't go to sleep or lock while installing
 gsettings set org.gnome.desktop.screensaver lock-enabled false
@@ -9,7 +9,7 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 
 # Upgrading
 sudo dnf upgrade -y
-sudo dnf install -y curl git unzip gum
+sudo dnf install -y curl git unzip
 
 # Corrigindo Codecs
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing -y
@@ -17,12 +17,12 @@ sudo dnf group upgrade multimedia --setop="install_weak_deps=False" --exclude=Pa
 sudo dnf group upgrade sound-and-video -y
 sudo dnf install amrnb amrwb faad2 flac gpac-libs lame libde265 libfc14audiodecoder mencoder x264 x265 ffmpegthumbnailer -y
 
-# Revert to normal idle and lock settings
-gsettings set org.gnome.desktop.screensaver lock-enabled true
-gsettings set org.gnome.desktop.session idle-delay 300
-
 # Run terminal installers
 for installer in ./terminal/terminal/*.sh; do source $installer; done
 for installer in ./applications/*.sh; do source $installer; done
+
+# Revert to normal idle and lock settings
+gsettings set org.gnome.desktop.screensaver lock-enabled true
+gsettings set org.gnome.desktop.session idle-delay 300
 
 gum confirm "Ready to reboot for all settings to take effect?" && sudo reboot
