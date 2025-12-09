@@ -47,6 +47,6 @@ stow nvim
 stow ssh
 stow starship
 stow tmux
-rm "$HOME/.zshrc"
+rm -f "$HOME/.zshrc"
 stow zsh
 cd -
