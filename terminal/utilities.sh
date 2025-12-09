@@ -1,1 +1,2 @@
-sudo dnf install eza bat fzf xclip ripgrep fd-find -y
+cargo install eza
+sudo dnf install bat fzf xclip ripgrep fd-find -y
