@@ -4,10 +4,7 @@ sudo dnf install pipx -y
 pipx ensurepath
 pipx install gnome-extensions-cli --system-site-packages
 
-gnome-extensions disable tiling-assistant@ubuntu.com
-gnome-extensions disable ubuntu-appindicators@ubuntu.com
-gnome-extensions disable ubuntu-dock@ubuntu.com
-gnome-extensions disable ding@rastersoft.com
+gnome-extensions disable background-logo@fedorahosted.org
 
 gext install tactile@lundal.io
 gext install just-perfection-desktop@just-perfection
