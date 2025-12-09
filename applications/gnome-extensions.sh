@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt install -y gnome-shell-extension-manager pipx
+sudo dnf install pipx -y
 pipx ensurepath
 pipx install gnome-extensions-cli --system-site-packages
 
