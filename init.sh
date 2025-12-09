@@ -18,7 +18,7 @@ sudo dnf group upgrade sound-and-video -y
 sudo dnf install amrnb amrwb faad2 flac gpac-libs lame libde265 libfc14audiodecoder mencoder x264 x265 ffmpegthumbnailer -y
 
 # Run terminal installers
-for installer in ./terminal/terminal/*.sh; do source $installer; done
+for installer in ./terminal/*.sh; do source $installer; done
 for installer in ./applications/*.sh; do source $installer; done
 
 # Revert to normal idle and lock settings
