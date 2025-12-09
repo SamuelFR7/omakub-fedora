@@ -1,1 +1,1 @@
-flatpak install flathub io.dbeaver.DBeaverCommunity
+flatpak install flathub io.dbeaver.DBeaverCommunity -y

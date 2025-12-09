@@ -1,1 +1,1 @@
-flatpak install flathub org.localsend.localsend_app
+flatpak install flathub org.localsend.localsend_app -y
