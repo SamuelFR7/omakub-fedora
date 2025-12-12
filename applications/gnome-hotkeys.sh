@@ -1,6 +1,9 @@
 # Alt+F4 is very cumbersome
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
+# Alt+Shift to change keyboard layout
+gsettings set org.gnome.desktop.input-sources xkb-options "['grp:alt_shift_toggle']"
+
 # Use 6 fixed workspaces instead of dynamic mode
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
