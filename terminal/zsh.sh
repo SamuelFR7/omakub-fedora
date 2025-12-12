@@ -1,2 +1,2 @@
 sudo dnf install zsh -y
-sudo chsh -s $(which zsh)
+chsh -s /bin/zsh
