@@ -7,6 +7,10 @@ gsettings set org.gnome.desktop.session idle-delay 0
 # Habilitando RPM Fusion
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
+# Instalar o driver da NVIDIA e CUDA
+sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda xorg-x11-drv-nvidia-cuda-libs -y
+sudo dnf install nvidia-vaapi-driver -y
+
 # Upgrading
 sudo dnf upgrade -y
 sudo dnf install -y curl git unzip
