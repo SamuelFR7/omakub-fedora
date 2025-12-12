@@ -1,1 +1,1 @@
-sudo dnf install flameshot -y
+flatpak install flathub org.flameshot.Flameshot -y
