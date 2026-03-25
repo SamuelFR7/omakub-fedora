@@ -15,6 +15,7 @@ gext install clipboard-indicator@tudmotu.com
 gext install unblank@sun.wxg@gmail.com
 gext install windowIsReady_Remover@nunofarruca@gmail.com
 gext install dash-to-dock@micxgx.gmail.com
+gext install vicinae@dagimg-dot
 
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/just-perfection-desktop\@just-perfection/schemas/org.gnome.shell.extensions.just-perfection.gschema.xml /usr/share/glib-2.0/schemas/
