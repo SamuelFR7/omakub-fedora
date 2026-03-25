@@ -21,4 +21,10 @@ unzip -o /tmp/GeistMono.zip -d ~/.local/share/fonts/GeistMono
 curl -L "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip" -o /tmp/GeistMonoNerdFont.zip
 unzip -o /tmp/GeistMonoNerdFont.zip -d ~/.local/share/fonts/NerdFonts
 
+# San Francisco Pro
+mkdir -p ~/.local/share/fonts/SFPro
+curl -L "https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts/archive/refs/heads/master.zip" -o /tmp/SFPro.zip
+unzip -o /tmp/SFPro.zip -d /tmp/SFPro
+mv /tmp/SFPro/San-Francisco-Pro-Fonts-master/*.otf ~/.local/share/fonts/SFPro/
+
 fc-cache -fv
