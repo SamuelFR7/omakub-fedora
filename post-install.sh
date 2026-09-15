@@ -47,7 +47,13 @@ stow nvim
 stow ssh
 stow starship
 stow tmux
-stow wallpapers
 rm -f "$HOME/.zshrc"
 stow zsh
+stow skills
+mkdir -p "$HOME/.codex"
+stow codex
+mkdir -p "$HOME/.claude"
+stow claude
+mkdir -p "$HOME/.config/hunk"
+stow hunk
 cd -
