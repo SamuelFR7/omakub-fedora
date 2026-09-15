@@ -8,8 +8,19 @@ gsettings set org.gnome.desktop.session idle-delay 0
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Instalar o driver da NVIDIA e CUDA
-sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda xorg-x11-drv-nvidia-cuda-libs -y
-sudo dnf install nvidia-vaapi-driver -y
+# A partir da série 590 a NVIDIA só distribui os módulos "open", que exigem GSP (Turing em diante).
+# GPUs Maxwell, Pascal e Volta (PCI ID < 0x1e00) precisam do branch legado 580xx.
+sudo dnf install -y pciutils
+nvidia_gpu_id=$(lspci -n -d 10de: | awk '$2 ~ /^03/ { split($3, id, ":"); print id[2]; exit }')
+if [ -n "$nvidia_gpu_id" ]; then
+  if (( 16#$nvidia_gpu_id < 16#1e00 )); then
+    nvidia_suffix="-580xx"
+  else
+    nvidia_suffix=""
+  fi
+  sudo dnf install akmod-nvidia$nvidia_suffix xorg-x11-drv-nvidia$nvidia_suffix-cuda xorg-x11-drv-nvidia$nvidia_suffix-cuda-libs -y
+  sudo dnf install nvidia-vaapi-driver -y
+fi
 
 # Upgrading
 sudo dnf upgrade -y
