@@ -8,7 +8,7 @@ gnome-extensions disable background-logo@fedorahosted.org
 
 gext install appindicatorsupport@rgcjonas.gmail.com
 gext install blur-my-shell@aunetx
-gext install dash2dock-lite@icedman.github.com
+gext install dash-to-dock@micxgx.gmail.com
 gext install just-perfection-desktop@just-perfection
 gext install pip-on-top@rafostar.github.com
 gext install tactile@lundal.io
@@ -18,7 +18,7 @@ gext install windowIsReady_Remover@nunofarruca@gmail.com
 
 sudo cp ~/.local/share/gnome-shell/extensions/appindicatorsupport\@rgcjonas.gmail.com/schemas/org.gnome.shell.extensions.appindicator.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell\@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
-sudo cp ~/.local/share/gnome-shell/extensions/dash2dock-lite\@icedman.github.com/schemas/org.gnome.shell.extensions.dash2dock-lite.gschema.xml /usr/share/glib-2.0/schemas/
+sudo cp ~/.local/share/gnome-shell/extensions/dash-to-dock\@micxgx.gmail.com/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/just-perfection-desktop\@just-perfection/schemas/org.gnome.shell.extensions.just-perfection.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/pip-on-top\@rafostar.github.com/schemas/org.gnome.shell.extensions.pip-on-top.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml /usr/share/glib-2.0/schemas/
