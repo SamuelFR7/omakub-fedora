@@ -56,4 +56,5 @@ mkdir -p "$HOME/.claude"
 stow claude
 mkdir -p "$HOME/.config/hunk"
 stow hunk
+stow pi
 cd -
