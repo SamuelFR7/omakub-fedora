@@ -8,6 +8,11 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['grp:alt_shift_toggl
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
 
+# Free Super+1..6 from GNOME Shell's app shortcuts (independent of Dash to Dock)
+for i in 1 2 3 4 5 6; do
+  gsettings set org.gnome.shell.keybindings "switch-to-application-$i" "[]"
+done
+
 # Use super for workspaces
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
