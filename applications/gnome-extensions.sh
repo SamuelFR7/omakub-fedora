@@ -15,6 +15,7 @@ gext install tactile@lundal.io
 gext install unblank@sun.wxg@gmail.com
 gext install vicinae@dagimg-dot
 gext install windowIsReady_Remover@nunofarruca@gmail.com
+gext install space-bar@luchrioh
 
 sudo cp ~/.local/share/gnome-shell/extensions/appindicatorsupport\@rgcjonas.gmail.com/schemas/org.gnome.shell.extensions.appindicator.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/blur-my-shell\@aunetx/schemas/org.gnome.shell.extensions.blur-my-shell.gschema.xml /usr/share/glib-2.0/schemas/
