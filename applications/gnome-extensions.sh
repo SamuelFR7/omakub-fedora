@@ -13,7 +13,6 @@ gext install just-perfection-desktop@just-perfection
 gext install pip-on-top@rafostar.github.com
 gext install tactile@lundal.io
 gext install unblank@sun.wxg@gmail.com
-gext install user-theme@gnome-shell-extensions.gcampax.github.com
 gext install vicinae@dagimg-dot
 gext install windowIsReady_Remover@nunofarruca@gmail.com
 
@@ -24,7 +23,6 @@ sudo cp ~/.local/share/gnome-shell/extensions/just-perfection-desktop\@just-perf
 sudo cp ~/.local/share/gnome-shell/extensions/pip-on-top\@rafostar.github.com/schemas/org.gnome.shell.extensions.pip-on-top.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/tactile@lundal.io/schemas/org.gnome.shell.extensions.tactile.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/unblank\@sun.wxg\@gmail.com/schemas/org.gnome.shell.extensions.unblank.gschema.xml /usr/share/glib-2.0/schemas/
-sudo cp ~/.local/share/gnome-shell/extensions/user-theme\@gnome-shell-extensions.gcampax.github.com/schemas/org.gnome.shell.extensions.user-theme.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/vicinae\@dagimg-dot/schemas/org.gnome.shell.extensions.vicinae.gschema.xml /usr/share/glib-2.0/schemas/
 sudo cp ~/.local/share/gnome-shell/extensions/windowIsReady_Remover\@nunofarruca\@gmail.com/schemas/org.gnome.shell.extensions.windowIsReady_Remover.gschema.xml /usr/share/glib-2.0/schemas/
 
