@@ -1,3 +1,6 @@
+# Disable the GNOME overview when pressing Super alone
+gsettings set org.gnome.mutter overlay-key ''
+
 # Alt+F4 is very cumbersome
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
